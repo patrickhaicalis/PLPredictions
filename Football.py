@@ -53,6 +53,7 @@ teams = teams.replace([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
 teams['Prediction'] = pred
 teams['Actual Result'] = y_test
 
-print(teams)
+teams = teams.replace([0, 1, 2], ['A', 'D', 'H'])
 
+print(teams)
 print(accuracy_score(y_test, pred))
